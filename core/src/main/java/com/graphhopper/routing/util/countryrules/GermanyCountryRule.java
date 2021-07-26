@@ -68,8 +68,8 @@ public class GermanyCountryRule implements CountryRule {
             return RoadAccess.YES;
         RoadClass roadClass = RoadClass.find(readerWay.getTag("highway", ""));
         switch (roadClass) {
-            case TRACK:
-                return RoadAccess.DESTINATION;
+//            case TRACK:
+//                return RoadAccess.DESTINATION;
             case PATH:
             case BRIDLEWAY:
             case CYCLEWAY:
