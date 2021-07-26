@@ -337,6 +337,7 @@ public class Measurement {
                 lmProfiles.add(new LMProfile("profile_tc").setPreparationProfile("profile_no_tc"));
         }
         ghConfig.setLMProfiles(lmProfiles);
+        ghConfig.putObject("country_rules.enabled", true);
         return ghConfig;
     }
 
