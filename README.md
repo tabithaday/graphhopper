@@ -15,7 +15,7 @@ By default it uses OpenStreetMap and GTFS data, but it can import other data sou
         
    -- this will take ages - if it fails you might need to install wget: `brew install wget`
    
-   to test if it is wokring go to 
+   to test if it is working go to 
         http://localhost:8989/route?point=52.5300591%2C13.3565022&point=52.5060440%2C13.4378107
 
 4 - download GB info `./graphhopper.sh -a web -i europe_great-britain.pbf -o great-britain-gh`
