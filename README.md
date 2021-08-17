@@ -5,6 +5,26 @@
 GraphHopper is a fast and memory efficient Java routing engine, released under Apache License 2.0.
 By default it uses OpenStreetMap and GTFS data, but it can import other data sources.
 
+# Steps to Locally Serve
+
+1 - clone `git clone git://github.com/tabithaday/graphhopper.git`
+
+2 - checkout `git checkout master`
+
+3 - run example map `./graphhopper.sh -a web -i europe_germany_berlin.pbf`
+        
+   -- this will take ages - if it fails you might need to install wget: `brew install wget`
+   
+   to test if it is wokring go to 
+        http://localhost:8989/route?point=52.5300591%2C13.3565022&point=52.5060440%2C13.4378107
+
+4 - download GB info `graphhopper % ./graphhopper.sh -a web -i europe_greatbritain.pbf -o great-britain-gh`
+        
+   -- you might need to allocate more space: `export JAVA_OPTS="-Xmx2g -Xms2g"`
+   
+5 - to test if it's working go to http://localhost:8989/route?point=51.626467,-0.101429%2C&ch.disable=true&algorithm=round_trip&round_trip.distance=5 : first instruction should be "Continue onto Eaton Park Road"
+
+
 # Community
 
 We have an open community and welcome everyone. Let us know your problems, use cases or just [say hello](https://discuss.graphhopper.com/). Please see our [community guidelines](https://graphhopper.com/agreements/cccoc.html).
