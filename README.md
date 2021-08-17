@@ -18,7 +18,7 @@ By default it uses OpenStreetMap and GTFS data, but it can import other data sou
    to test if it is wokring go to 
         http://localhost:8989/route?point=52.5300591%2C13.3565022&point=52.5060440%2C13.4378107
 
-4 - download GB info `graphhopper % ./graphhopper.sh -a web -i europe_greatbritain.pbf -o great-britain-gh`
+4 - download GB info `./graphhopper.sh -a web -i europe_greatbritain.pbf -o great-britain-gh`
         
    -- you might need to allocate more space: `export JAVA_OPTS="-Xmx2g -Xms2g"`
    
